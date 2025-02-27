@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body  */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* navbar  */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #80d0c7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 30px;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+li a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+nav button {
+    background-color: orange;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    background-color: transparent;
+    border: 2px solid orange;
+    color: orange;
+}
+
+.fa-bars {
+    font-size: 40px;
+    color: #fff;
+    display: none;
+}
+
+/* HEADER  */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    height: 92vh;
+}
+
+.head h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover>.search-input {
+    width: 400px;
+}
+
+.search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas {
+    color: #80d0c7;
+    font-size: 30px;
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    25% {
+        transform: skew(5deg, 5deg);
+    }
+
+    75% {
+        transform: skew(-5deg, -5deg);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.search-container:hover {
+    animation: hoverShake 0.15s linear 3;
+}
+
+/* COURSES */
+
+.courses {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.course-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.course-head h1 {
+    font-size: 45px;
+}
+
+.course-p {
+    display: flex;
+    margin: 40px 20px;
+}
+
+.course-p p {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.first {
+    color: #13547a;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+}
+
+.course-p .sec:hover {
+    color: #13547a;
+    transition: 0.4s;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    width: 20%;
+    padding: 20px;
+    margin: 0 20px;
+    box-shadow: 10px 15px 20px rgb(136, 136, 136);
+    font-weight: 100;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #717275;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+/* TUTOR */
+
+.tutor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12em;
+}
+
+.tutor h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.tutor h3 {
+    font-size: 23px;
+    margin: 5px 0;
+    font-weight: bold;
+
+}
+
+.tutor h4 {
+    font-size: 23px;
+    margin: 5px 0;
+    color: #454546;
+
+}
+
+.tutor p {
+    font-size: 22px;
+    color: #717275;
+    margin: 5px 0;
+
+}
+
+.tutor img {
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 10px 15px 20px rgb(136, 136, 136);
+}
+
+
+
+/* REVIEWS */
+
+.heading h1 {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    font-size: 45px;
+}
+
+.Reviews {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Review-card {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 15px 20px rgb(136, 136, 136);
+    margin: 0 20px;
+    border-radius: 10px;
+
+}
+
+.Review-card:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.Review-card h2,
+p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #717275;
+
+}
+
+.Review-card h2 {
+    font-size: 25px;
+    color: black;
+}
+
+.Review-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* GET IN TOUCH  */
+
+.get-in-head h1 {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    font-size: 45px;
+
+}
+
+.get-in {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    /* border-radius: 5px; */
+}
+
+
+.address h3 {
+    margin: 15px 20px;
+    color: #454546;
+}
+
+.address h2 {
+    margin: 15px 20px;
+}
+
+.address span {
+    color: #80d0c7;
+}
+
+/* FOOTER  */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    color: rgb(0, 0, 0);
+}
+
+
+footer div {
+    margin: 80px 65px;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+footer div p {
+    color: #80d0c7;
+}
+
+footer div h2 {
+    color: #13547a;
+}
+
+.end {
+    text-align: center;
+    color: #a7a7a7;
+    font-size: 20px;
+}
+
+.end span {
+    color: #13547a;
+}
+
+
+/* MEDIA QUERY  */
+@media screen and (max-width:1026px) {
+
+    nav ul,
+    button {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: block;
+    }
+
+    .get-in iframe {
+        width: 600px;
+    }
+
+    footer div {
+        margin: 80px 50px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .card {
+        width: 40%;
+        margin: 40px 20px;
+    }
+
+    .tutor img {
+        width: 70%;
+    }
+
+    .Reviews {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Review-card {
+        width: 40%;
+        margin: 40px 20px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    footer div {
+        margin: 40px 35px;
+    }
+
+
+    .get-in iframe {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+
+    .head h1 {
+        font-size: 45px;
+    }
+
+    .get-in {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .get-in iframe {
+        width: 100%;
+    }
+
+    .tutor img {
+        width: 80%;
+    }
+
+    .tutor p {
+        font-size: 15px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .Reviews {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Review-card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    footer div {
+        margin: 40px 35px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:400px) {
+
+    .head h1 {
+        font-size: 35px;
+    }
+
+    .get-in {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .get-in iframe {
+        width: 100%;
+    }
+
+    .tutor img {
+        width: 80%;
+    }
+
+    .tutor p {
+        font-size: 15px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .Reviews {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Review-card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    footer div {
+        margin: 40px 35px;
+    }
+
+}

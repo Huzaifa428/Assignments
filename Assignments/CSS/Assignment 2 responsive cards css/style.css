@@ -1,0 +1,26 @@
+.main {
+margin-top: 8%;
+
+}
+div {
+    display: inline-block;
+
+border: 2px solid black;
+width: 200px;
+margin-left: 2%;
+text-align: center;
+
+}
+button {
+    border-radius: 7px;
+    width: 120px;
+    background-color: black;
+    color: white;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.abc {
+    mix-blend-mode: multiply;
+}
